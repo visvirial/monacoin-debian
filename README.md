@@ -6,7 +6,7 @@ Monacoin Debian/Ubuntu (or any other debian-derivative distributions) integratio
 
 This repository provides files needed to debianize monacoin.
 
-This repository is useful only for developers for want to debianize monacoin.
+This repository is useful only for developers who want to debianize monacoin.
 If you want to install monacoin on your computer,
 just add the PPA repository (see below).
 
@@ -64,7 +64,7 @@ Filing a bug
 
 If you find any bugs, or any improvement suggestions, let me know via
 
- * E-mail: <monatr.jp[MONA]gmail.com> [replace [MONA] as @]
+ * E-mail: &lt;monatr.jp[MONA]gmail.com&gt; [replace [MONA] as @]
  * Twitter: [@monatr_jp](https://twitter.com/monatr_jp)
 
 

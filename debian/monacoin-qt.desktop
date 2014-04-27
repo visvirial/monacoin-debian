@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Monacoin
+Name[ja]=モナーコイン
+Comment=Monacoin P2P Cryptocurrency
+Comment[ja]=モナーコインP2P暗号通貨
+Exec=/usr/bin/monacoin-qt %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/monacoin/bitcoin128.png
+MimeType=x-scheme-handler/monacoin;
+Categories=Office;

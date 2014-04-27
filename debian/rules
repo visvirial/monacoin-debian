@@ -1,0 +1,36 @@
+#!/usr/bin/make -f
+# -*- mode: makefile; coding: utf-8 -*-
+
+#DEB_MAKE_CHECK_TARGET = test_monacoin
+#build/monacoind::
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_monacoin)
+
+DEB_INSTALL_EXAMPLES_monacoind += debian/examples/*
+DEB_INSTALL_MANPAGES_monacoind += debian/manpages/*
+
+%:
+	dh --with bash-completion $@
+
+override_dh_auto_build:
+	cd src; $(MAKE) -f makefile.unix monacoind
+	$(MAKE)
+
+override_dh_auto_clean:
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f monacoin-qt; fi
+	cd src; $(MAKE) -f makefile.unix clean
+	rm -f monacoin-qt Makefile build/build.h
+
+override_dh_auto_configure:
+	qmake bitcoin-qt.pro USE_QRCODE=1
+
+override_dh_auto_test:
+	cd src; $(MAKE) -f makefile.unix test_monacoin
+	# XXX: Test not working currenctly, disabled...
+	#src/test_monacoin
+
+# Ensure wrapper is set executable
+binary-post-install/monacoind:
+	chmod +x $(cdbs_curdestdir)usr/bin/monacoind
+binary-post-install/monacoin-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/monacoin-qt
+

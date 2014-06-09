@@ -16,7 +16,7 @@ Installing the PPA repository
 Ubuntu's PPA (personal package archive) is provided [here](https://launchpad.net/~monatr/+archive/monacoin).
 You can add this repository by the following commands.
 
-    $ sudo add-apt-repsitory ppa:monatr/monacoin
+    $ sudo add-apt-repository ppa:monatr/monacoin
     $ sudo apt-get update
 
 Then, you can install monacoin-qt [desktop app] and monacoind [server app] using apt-get:

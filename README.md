@@ -13,10 +13,10 @@ just add the PPA repository (see below).
 Installing the PPA repository
 -----------------------------
 
-Ubuntu's PPA (personal package archive) is provided [here](https://launchpad.net/~monatr/+archive/monacoin).
+Ubuntu's PPA (personal package archive) is provided [here](https://launchpad.net/~visvirial/+archive/monacoin).
 You can add this repository by the following commands.
 
-    $ sudo add-apt-repository ppa:monatr/monacoin
+    $ sudo add-apt-repository ppa:visvirial/monacoin
     $ sudo apt-get update
 
 Then, you can install monacoin-qt [desktop app] and monacoind [server app] using apt-get:
@@ -64,8 +64,8 @@ Filing a bug
 
 If you find any bugs, or any improvement suggestions, let me know via
 
- * E-mail: &lt;monatr.jp[MONA]gmail.com&gt; [replace [MONA] as @]
- * Twitter: [@monatr_jp](https://twitter.com/monatr_jp)
+ * E-mail: &lt;visvirial[MONA]gmail.com&gt; [replace [MONA] as @]
+ * Twitter: [@visvirial](https://twitter.com/visvirial)
 
 
 

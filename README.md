@@ -2,6 +2,46 @@
 monacoin-debian
 ===============
 
+
+
+Japanese
+--------
+
+Ubuntuをお使いの方は、下記の手順を踏むことで簡単にお使いのシステムにMonacoinを導入できます。
+
+### 簡単な使い方
+
+端末から以下のコマンドを入力することでPPAリポジトリを有効化してください。
+
+```bash
+$ sudo add-apt-repository ppa:visvirial/monacoin
+$ sudo apt-get update
+```
+
+次に、Monacoinパッケージをインストールします。
+
+* サーバ版の場合
+```bash
+sudo apt-get install monacoind
+```
+* デスクトップ版の場合
+```bash
+sudo apt-get install monacoin-qt
+```
+
+あとは通常の使い方と同様です。
+
+なお、Ubuntuデスクトップ版をお使いの方は、UnityのDashからも起動することができます。
+
+### 詳細
+
+Debianパッケージのビルド方法などの詳細については、下記の英語の説明をお読みください。
+
+
+
+English
+-------
+
 Monacoin Debian/Ubuntu (or any other debian-derivative distributions) integration files.
 
 This repository provides files needed to debianize monacoin.

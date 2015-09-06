@@ -1,1 +1,2 @@
-src/monacoind usr/bin
+usr/local/bin/monacoind usr/bin
+usr/local/bin/monacoin-cli usr/bin

@@ -11,26 +11,15 @@ DEB_INSTALL_MANPAGES_monacoind += debian/manpages/*
 %:
 	dh --with bash-completion $@
 
-override_dh_auto_build:
-	cd src; $(MAKE) -f makefile.unix monacoind
-	$(MAKE)
-
 override_dh_auto_clean:
-	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f monacoin-qt; fi
-	cd src; $(MAKE) -f makefile.unix clean
-	rm -f monacoin-qt Makefile build/build.h
+	if [ -f Makefile ]; then $(MAKE) distclean; fi
+	rm -rf Makefile.in aclocal.m4 configure src/Makefile.in src/monacoin-config.h.in src/build-aux src/qt/Makefile.in src/qt/test/Makefile.in src/test/Makefile.in
 
+# Yea, autogen should be run on the source archive, but I like doing git archive
 override_dh_auto_configure:
-	qmake bitcoin-qt.pro USE_QRCODE=1
+	./autogen.sh
+	./configure
 
 override_dh_auto_test:
-	cd src; $(MAKE) -f makefile.unix test_monacoin
-	# XXX: Test not working currenctly, disabled...
-	#src/test_monacoin
-
-# Ensure wrapper is set executable
-binary-post-install/monacoind:
-	chmod +x $(cdbs_curdestdir)usr/bin/monacoind
-binary-post-install/monacoin-qt:
-	chmod +x $(cdbs_curdestdir)usr/bin/monacoin-qt
+	#make check
 

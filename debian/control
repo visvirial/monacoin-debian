@@ -1,26 +1,30 @@
 Source: monacoin
 Section: utils
 Priority: optional
-Maintainer: Mona Tore <monatr.jp@gmail.com>
+Maintainer: Jonas Smedegaard <dr@jones.dk>
+Uploaders: Micah Anderson <micah@debian.org>
 Build-Depends: debhelper,
  devscripts,
+ automake,
+ libtool,
  bash-completion,
  libboost-system-dev (>> 1.35) | libboost-system1.35-dev,
- libdb++-dev,
+ libdb4.8++-dev,
  libssl-dev,
  pkg-config,
- libminiupnpc-dev,
+ libminiupnpc8-dev,
  libboost-filesystem-dev (>> 1.35) | libboost-filesystem1.35-dev,
  libboost-program-options-dev (>> 1.35) | libboost-program-options1.35-dev,
  libboost-thread-dev (>> 1.35) | libboost-thread1.35-dev,
  libboost-test-dev (>> 1.35) | libboost-test1.35-dev,
  qt4-qmake,
  libqt4-dev,
- libqrencode-dev
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://monacoin.org/
-Vcs-Git: git://github.com/keystore00/monacoin.git
-Vcs-Browser: http://github.com/keystore00/monacoin
+Homepage: http://www.monacoin.org/
+Vcs-Git: git://github.com/monacoin/monacoin.git
+Vcs-Browser: http://github.com/monacoin/monacoin
 
 Package: monacoind
 Architecture: any
@@ -33,10 +37,10 @@ Description: peer-to-peer network based digital currency - daemon
  check for double-spending.
  .
  Full transaction history is stored locally at each client.  This
- requires 2+ GB of space, slowly growing.
+ requires 20+ GB of space, slowly growing.
  .
- This package provides monacoind, a combined daemon and CLI tool to
- interact with the daemon.
+ This package provides the daemon, monacoind, and the CLI tool
+ monacoin-cli to interact with the daemon.
 
 Package: monacoin-qt
 Architecture: any
@@ -49,6 +53,6 @@ Description: peer-to-peer network based digital currency - Qt GUI
  check for double-spending.
  .
  Full transaction history is stored locally at each client.  This
- requires 2+ GB of space, slowly growing.
+ requires 20+ GB of space, slowly growing.
  .
  This package provides Monacoin-Qt, a GUI for Monacoin based on Qt.

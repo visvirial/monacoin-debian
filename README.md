@@ -22,11 +22,11 @@ $ sudo apt-get update
 
 * サーバ版の場合
 ```bash
-sudo apt-get install monacoind
+$ sudo apt-get install monacoind
 ```
 * デスクトップ版の場合
 ```bash
-sudo apt-get install monacoin-qt
+$ sudo apt-get install monacoin-qt
 ```
 
 あとは通常の使い方と同様です。

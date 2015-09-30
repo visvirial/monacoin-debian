@@ -1,3 +1,15 @@
+monacoin (0.10.2.2-ppa2+precise) precise; urgency=medium
+
+  * Building for Precise.
+
+ -- Vis Virial <visvirial@gmail.com>  Sun, 06 Sep 2015 20:17:42 +0900
+
+monacoin (0.10.2.2-ppa2) vivid; urgency=low
+
+  * Fix name in monacoin-qt.desktop.
+
+ -- Vis Virial <visvirial@gmail.com>  Sun, 06 Sep 2015 18:25:05 +0900
+
 monacoin (0.10.2.2-ppa1) vivid; urgency=medium
 
   * New upstream release (hard fork).

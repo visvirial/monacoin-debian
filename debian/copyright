@@ -2,8 +2,7 @@ Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=174
 Upstream-Name: Monacoin
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
  irc://#monacoin@freenode.net
-Source: http://sourceforge.net/projects/monacoin/files/
- https://github.com/monacoin/monacoin
+Source: https://github.com/monacoin/monacoin
 
 Files: *
 Copyright: 2009-2012, Monacoin Core Developers

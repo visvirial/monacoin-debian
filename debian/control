@@ -1,18 +1,18 @@
 Source: monacoin
 Section: utils
 Priority: optional
-Maintainer: Jonas Smedegaard <dr@jones.dk>
-Uploaders: Micah Anderson <micah@debian.org>
+Maintainer: Vis Virial <visvirial@gmail.com>
+Uploaders: Vis Virial <visvirial@gmail.com>
 Build-Depends: debhelper,
  devscripts,
  automake,
  libtool,
  bash-completion,
- libboost-system-dev (>> 1.35) | libboost-system1.35-dev,
  libdb4.8++-dev,
  libssl-dev,
  pkg-config,
- libminiupnpc8-dev | libminiupnpc-dev (>> 1.6),
+ libevent-dev,
+ libboost-system-dev (>> 1.35) | libboost-system1.35-dev,
  libboost-filesystem-dev (>> 1.35) | libboost-filesystem1.35-dev,
  libboost-program-options-dev (>> 1.35) | libboost-program-options1.35-dev,
  libboost-thread-dev (>> 1.35) | libboost-thread1.35-dev,
@@ -21,7 +21,8 @@ Build-Depends: debhelper,
  libqt4-dev,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler,
- python
+ python,
+ libzmq3-dev
 Standards-Version: 3.9.2
 Homepage: https://monacoin.org/
 Vcs-Git: git://github.com/monacoin/monacoin.git

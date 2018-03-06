@@ -1,3 +1,9 @@
+monacoin (0.15.1-artful1) artful; urgency=medium
+
+  * New upstream release
+
+ -- Vis Virial <visvirial@gmail.com>  Tue, 06 Mar 2018 19:26:35 +0900
+
 monacoin (0.14.2-zesty1) zesty; urgency=medium
 
   * New upstream release.

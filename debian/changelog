@@ -1,3 +1,9 @@
+monacoin (0.16.3-bionic2) bionic; urgency=medium
+
+  * New upstream release
+
+ -- Vis Virial <visvirial@gmail.com>  Wed, 19 Sep 2018 15:06:50 +0900
+
 monacoin (0.15.1-artful1) artful; urgency=medium
 
   * New upstream release

@@ -1,4 +1,10 @@
-monacoin (0.16.3-bionic2) bionic; urgency=medium
+monacoin (0.17.1-eoan2) eoan; urgency=medium
+
+  * New upstream release.
+
+ -- Vis Virial <visvirial@gmail.com>  Fri, 12 Jul 2019 11:53:22 +0900
+
+monacoin (0.16.3-cosmic1) cosmic; urgency=medium
 
   * New upstream release
 
